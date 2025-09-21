@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+ .sidebar {
+      background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 100%);
+      min-height: 98vh;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: clamp(180px,100%,250px);
+      padding: 0px 10px;
+      margin: 5px 0 0 5px;
+      z-index: 1000;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+    .container-fluid{
+        width: 90%;
+    }
+    .answer-option{
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    .answer-option:hover{
+      border-radius: 10px;
+      border: 2px solid #87CEEB;
+    }
+
+    .main-content {
+      margin-left: 255px;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+      overflow-y: auto;
+    }
+    
+.answer-option.selected {
+  border-color: #87CEEB;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);  
+ color:#87CEEB;
+  font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    .content-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    .content-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      border-color: #87CEEB;
+    }
+.card-text{
+    color:#87CEEB;
+}
+    .card-letter {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #87CEEB 0%, #4FC3F7 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      margin: 0 auto 20px;
+    }
+
+    .sidebar-brand {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 20px;
+      display: block;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    .custom-nav{
+display: none;
+height: 40px;
+
+background-color: #87CEEB;
+    }
+   
+    .menu-btn{
+       background-color:#87CEEB;
+        border: 1px solid transparent;
+    }
+    .cancel-btn{
+        display: none;
+            height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #11ccec;
+        
+        border: 1px solid rgb(47, 238, 252);
+    background-color: aliceblue;
+    }
+   
+
+    .nav-link {
+      color: white;
+      font-weight: 500;
+      border-radius: 10px;
+      margin: 5px 15px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      padding: 12px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .nav-link:hover {
+      background: rgba(255,255,255,0.2);
+      color: white;
+    }
+
+    .nav-link.active {
+      background: rgba(255,255,255,0.3);
+      color: white;
+    }
+
+  .card-body{
+    font-size: 14px;
+        text-align: left;
   }
+
+    .btn-custom {
+      
+      border: 2px solid  #87CEEB ;
+      border-radius: 25px;
+      padding: 15px;
+      font-weight: 500;
+      color: rgb(112, 225, 253);
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, #87CEEB 0%, #4FC3F7 100%);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      color: white;
+    }
+    .training-card{
+        font-size: 14px;
+       text-align: left;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    border-radius: 15px;
+    background: rgb(201, 245, 248);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      cursor: pointer;
+      border: 2px solid rgb(47, 238, 252);
+    }
+.activity{
+    background:linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+    border-radius: 15px;
+    color: #188cf8;
+    font-weight: 600;
+}
+.back-btn{
+    padding: 5px;
+    width:clamp(60px,100%,100px);
+    font-size: 14px;
+    margin: 0 0 0 10px;
+
+   
+}
+.closebtn-2{
+    display:none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    right: -20px;
+    top: 70%;
+    border: 1px solid rgb(47, 238, 252);
+    background-color: aliceblue;
+    color: #11ccec;
+    font-size: 20px;
+    font-weight: 700;
+}
+.page-title{
+    font-size: clamp(18px,2.5vw,25px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    @media (max-width: 750px) {
+      .sidebar {
+       background-color: rgba(255, 255, 255, 0.5);
+        display:none;
+      }
+      .custom-nav{
+        display: flex;
+      
+      }
+       .visibleNav{
+        display: block;
+        margin: 0px;
+        height: 100%;
+    }
+      .cancel-btn{
+        display: block;
+      }
+    
+      .closebtn-2{
+        display: block;
+      }
+      .main-content {
+        margin-left: 0;
+      }
+    }
+  ;
