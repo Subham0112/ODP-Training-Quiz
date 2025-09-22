@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Sidebar from './components/SideNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ContentPage from './components/Content';
+import HodPage from './components/HodPage';
 import TrainingPage from './components/Training';
 import QuizPage from './components/Quiz';
 import './App.css';
@@ -21,8 +22,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Navigate to="/odp" replace />} />
             <Route path="/odp" element={<ContentPage />} />
-            <Route path="/training/:option" element={<TrainingPage />} />
-            <Route path="/quiz/:option" element={<QuizPage />} />
+             <Route path="/hod" element={<HodPage />} />
+            <Route path="/training/:type/:option" element={<TrainingPage />} />
+            <Route path="/quiz/:type/:option" element={<QuizPage />} />
             <Route path="*" element={<Navigate to="/odp" replace />} />
           </Routes>
         </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { OdpoptionsData } from '../data/optionData';
+import { HodoptionsData } from '../data/optionData';
 
-function Content() {
+function HodContent() {
   const navigate = useNavigate();
   const location = useLocation();
   
@@ -21,7 +21,7 @@ function Content() {
         </div>
 
         <div className="row g-4">
-          {OdpoptionsData.map((option) => (
+          {HodoptionsData.map((option) => (
             <div key={option.title} className="col col-md-6">
               <div className="content-card p-4 h-100 text-center">
                 <h5 className="card-title card-text mb-3">{option.title}</h5>
@@ -49,4 +49,4 @@ function Content() {
   );
 }
 
-export default Content;
+export default HodContent;

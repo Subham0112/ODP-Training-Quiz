@@ -1,60 +1,116 @@
-import React, { useEffect, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useEffect, useRef } from "react";
+import { Link, useLocation } from "react-router-dom";
 // import '../styles/Sidebar.css';
 
 function Sidebar() {
   const location = useLocation();
   const sidebarRef = useRef(null);
+
   const isActive = (path) => location.pathname === path;
+
+  // Check if ODP section is active (ODP page + its training/quiz pages)
+  const isODPActive = () => {
+    return (
+      location.pathname === "/odp" ||
+      // Check if we're in training/quiz for ODP (type = 'odp')
+      (location.pathname.includes("/training") && location.pathname.includes("/odp/")) ||
+      (location.pathname.includes("/quiz") && location.pathname.includes("/odp/")) ||
+      // Alternative check using URL segments for /training/odp/* or /quiz/odp/*
+      location.pathname.startsWith("/training/odp") ||
+      location.pathname.startsWith("/quiz/odp")
+    );
+  };
+
+  // Check if HOD section is active (HOD page + its training/quiz pages)
+  const isHODActive = () => {
+    return (
+      location.pathname === "/hod" ||
+      // Check if we're in training/quiz for HOD (type = 'hod')
+      (location.pathname.includes("/training") && location.pathname.includes("/hod/")) ||
+      (location.pathname.includes("/quiz") && location.pathname.includes("/hod/")) ||
+      // Alternative check using URL segments for /training/hod/* or /quiz/hod/*
+      location.pathname.startsWith("/training/hod") ||
+      location.pathname.startsWith("/quiz/hod")
+    );
+  };
+
   const handleClick = () => {
-    document.getElementById('mySidebar').classList.remove('visibleNav');
- 
-  }
+    document.getElementById("mySidebar").classList.remove("visibleNav");
+  };
 
   // Click outside functionality
   useEffect(() => {
     const handleClickOutside = (event) => {
       const sidebar = sidebarRef.current;
-      const menuBtn = document.querySelector('.menu-btn'); // Your actual menu button
-      
-      // Check if sidebar exists and is visible
-      if (sidebar && sidebar.classList.contains('visibleNav')) {
-        // Check if click is outside sidebar and not on the menu button
-        if (!sidebar.contains(event.target) && !menuBtn?.contains(event.target)) {
-          sidebar.classList.remove('visibleNav');
+      const menuBtn = document.querySelector(".menu-btn");
+
+      if (sidebar && sidebar.classList.contains("visibleNav")) {
+        if (
+          !sidebar.contains(event.target) &&
+          !menuBtn?.contains(event.target)
+        ) {
+          sidebar.classList.remove("visibleNav");
         }
       }
     };
 
-    // Add event listener
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
 
-    // Cleanup function
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
   return (
     <div className="sidebar" id="mySidebar" ref={sidebarRef}>
-      <button  onClick={handleClick}  className='cancel-btn mt-3'><i className="fa-solid fa-xmark"></i></button>
+      {/* Close button (X) */}
+      <button onClick={handleClick} className="cancel-btn mt-3">
+        <i className="fa-solid fa-xmark"></i>
+      </button>
+
+      {/* Sidebar brand */}
       <div className="sidebar-brand">
         <Link to="/odp" className="brand-link">
-          ODP System
+          Training System
         </Link>
       </div>
+
+      {/* Navigation links */}
       <nav className="nav flex-column pt-3">
-        <Link 
+        {/* Navigation section header */}
+        <div className="nav-section-header">
+          <h6 className="nav-header">Learning Center</h6>
+        </div>
+
+        {/* ODP Navigation Link */}
+        <Link
           onClick={handleClick}
           to="/odp"
-          className={`nav-link ${isActive('/odp') || location.pathname.includes('/training') || location.pathname.includes('/quiz') ? 'active' : ''}`}
+          className={`nav-link ${isODPActive() ? "active" : ""}`}
         >
-          📋 ODP
+          📋 ODP Training
+        </Link>
+
+        {/* HOD Navigation Link */}
+        <Link
+          onClick={handleClick}
+          to="/hod"
+          className={`nav-link ${isHODActive() ? "active" : ""}`}
+        >
+          👨‍💼 HOD Training
         </Link>
       </nav>
 
-      <button  onClick={handleClick} style={{width:"50px"}}  className=' position-absolute  closebtn-2 mt-3'> <i class="fa-solid fa-arrow-left"></i></button>
+      {/* Arrow back button */}
+      <button
+        onClick={handleClick}
+        style={{ width: "50px" }}
+        className="position-absolute closebtn-2 mt-3"
+      >
+        <i className="fa-solid fa-arrow-left"></i>
+      </button>
     </div>
   );
-};
+}
 
 export default Sidebar;

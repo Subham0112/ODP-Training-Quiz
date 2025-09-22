@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { getQuizData } from '../data/quizData';
-import "../App.css"
-// import '../styles/QuizPage.css';
+import { getQuizData} from '../data/odpquizData';
+import { HabgetQuizData} from '../data/habquizData';
 
 function Quiz() {
-  const { option } = useParams();
+  const { option, type } = useParams(); // Get both type and option from URL
   const navigate = useNavigate();
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [selectedAnswer, setSelectedAnswer] = useState('');
@@ -13,10 +12,11 @@ function Quiz() {
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [score, setScore] = useState(0);
   
-  const quizData = getQuizData(option);
+  // Use the type parameter to determine which data to load
+  const quizData = type === 'odp' ? getQuizData(option) : HabgetQuizData(option);
 
+  
   useEffect(() => {
-    // Load saved answer for current question
     if (answers[currentQuestion]) {
       setSelectedAnswer(answers[currentQuestion]);
     } else {
@@ -24,8 +24,27 @@ function Quiz() {
     }
   }, [currentQuestion, answers]);
 
+  // Add error handling for missing data
+  if (!quizData || !quizData.questions) {
+    return (
+      <div className="quiz-page mx-2">
+        <div className="container-fluid py-4">
+          <div className="alert alert-danger">
+            <h4>Quiz data not found</h4>
+            <p>No quiz data available for "{option}" in {type.toUpperCase()} section.</p>
+            <button className="btn btn-secondary" onClick={() => navigate(`/${type}`)}>
+              ← Back to {type.toUpperCase()}
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  
+
   const handleBackToOptions = () => {
-    navigate('/odp');
+    navigate(`/${type}`); // Navigate back to the correct section
   };
 
   const handleAnswerSelect = (answer) => {
@@ -89,15 +108,15 @@ function Quiz() {
                   <div className="result-message mb-4">
                     {score >= 80 ? (
                       <div className="alert alert-success">
-                        <strong>Excellent!</strong> You've mastered Option {option}.
+                        <strong>Excellent!</strong> You've mastered {option}.
                       </div>
                     ) : score >= 60 ? (
                       <div className="alert alert-warning">
-                        <strong>Good job!</strong> Consider reviewing the material for Option {option}.
+                        <strong>Good job!</strong> Consider reviewing the material for {option}.
                       </div>
                     ) : (
                       <div className="alert alert-danger">
-                        <strong>Keep learning!</strong> Review the training material for Option {option}.
+                        <strong>Keep learning!</strong> Review the training material for {option}.
                       </div>
                     )}
                   </div>
@@ -128,7 +147,7 @@ function Quiz() {
             <div className="d-flex justify-content-between align-items-center mb-4">
               <h3 className="page-title">Quiz - {option}</h3>
               <button 
-                className="btn  mx-3 btn-outline-secondary back-btn"
+                className="btn mx-3 btn-outline-secondary back-btn"
                 onClick={handleBackToOptions}
               >
                 ← Back 
@@ -156,17 +175,16 @@ function Quiz() {
 
                 <h5 className="mb-4 question-text">{currentQuestionData?.question}</h5>
                 
-                <div className="row g-3 ">
+                <div className="row g-3">
                   {currentQuestionData?.options.map((option, index) => (
                     <div key={index} className="col-12">
                       <div 
-                      style={{borderRadius:'10px'}}
+                        style={{borderRadius:'10px'}}
                         className={`card answer-option p-3 border-2 ${selectedAnswer === option ? 'selected' : ''}`}
                         onClick={() => handleAnswerSelect(option)}
                       >
-                        <div  className="d-flex align-items-center">
-                        
-                          <span className="answer-text"> {option}</span>
+                        <div className="d-flex align-items-center">
+                          <span className="answer-text">{option}</span>
                         </div>
                       </div>
                     </div>
@@ -197,6 +215,6 @@ function Quiz() {
       </div>
     </div>
   );
-};
+}
 
 export default Quiz;
