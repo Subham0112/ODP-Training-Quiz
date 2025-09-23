@@ -282,7 +282,7 @@ function Quiz() {
                   ></div>
                 </div>
 
-                {reviewMode && (
+                {/* {reviewMode && (
                   <div className="mb-3">
                     <div className="alert alert-info">
                       <small>
@@ -292,7 +292,7 @@ function Quiz() {
                       </small>
                     </div>
                   </div>
-                )}
+                )} */}
 
                 <h5 className="mb-4 question-text">{currentQuestion}. {currentQuestionData?.question}</h5>
                 

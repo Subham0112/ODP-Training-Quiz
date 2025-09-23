@@ -25,7 +25,7 @@ return {
       {
         question: `You are a mandated reporter. What does that mean?`,
         options: [
-          `You can report only if you&#39;re sure`,
+          `You can report only if you're sure`,
           `You report only to family members`,
           `You are required by law to report any suspected or alleged abuse`,
           `Only managers must report`
@@ -423,385 +423,385 @@ return {
 }
 };
 
-export const HodgetQuizData = (option) => {
-switch (option){
-  case "Abuse, Neglect and Mandated Reporting" :
-    return{
-      questions: [
-       {
-        question: "What is considered physical abuse?",
-        options: [
-          "Ignoring someone’s question",
-          "Making a joke about a person",
-          "Hitting or pushing someone",
-          "Forgetting to bring someone to an appointment",
-        ],
-        correct: "Hitting or pushing someone",
-      },
-      {
-        question: "Which of the following is a sign of emotional abuse?",
-        options: [
-          "Dirty clothing",
-          "Refusing to eat vegetables",
-          "Fearfulness and withdrawal",
-          "Falling asleep in public",
-        ],
-        correct: "Fearfulness and withdrawal",
-      },
-      {
-        question: "Neglect can be defined as:",
-        options: [
-          "Choosing not to engage socially",
-          "Failure to provide necessary care or supervision",
-          "Taking someone’s money",
-          "A preference for privacy",
-        ],
-        correct: "Failure to provide necessary care or supervision",
-      },
-      {
-        question: "Mandated reporters must report suspected abuse:",
-        options: [
-          "Only if it’s confirmed",
-          "At their next team meeting",
-          "Immediately",
-          "After discussing with family",
-        ],
-        correct: "Immediately",
-      },
-      {
-        question: "True or False: Staff are required to report suspected abuse to their supervisor only.",
-        options: ["True", "False"],
-        correct: "False",
-      },
-      {
-        question: "Which of the following could be sexual abuse?",
-        options: [
-          "Offering help with dressing",
-          "Making jokes about someone’s appearance",
-          "Inappropriate touching or coercion",
-          "Explaining hygiene to someone",
-        ],
-        correct: "Inappropriate touching or coercion",
-      },
-      {
-        question: "What is one correct way to report abuse?",
-        options: [
-          "Post about it online",
-          "Call ChildLine or Protective Services",
-          "Talk to a friend at lunch",
-          "Wait until your shift ends",
-        ],
-        correct: "Call ChildLine or Protective Services",
-      },
-      {
-        question: "Failure to report abuse may result in:",
-        options: [
-          "A promotion",
-          "No consequences",
-          "Legal action or job loss",
-          "A verbal warning",
-        ],
-        correct: "Legal action or job loss",
-      },
-      {
-        question: "A person shows bruises and seems withdrawn. You should:",
-        options: [
-          "Ignore it and give space",
-          "Report it immediately",
-          "Ask other staff what to do later",
-          "Wait to see if it happens again",
-        ],
-        correct: "Report it immediately",
-      },
-      {
-        question: "Creating a culture of safety means:",
-        options: [
-          "Staying silent about concerns",
-          "Respecting every person and speaking up for their rights",
-          "Only following instructions",
-          "Avoiding extra responsibilities",
-        ],
-        correct: "Respecting every person and speaking up for their rights",
-      },
-    ]
-    }
-    case "Cultural Competency and Disability Awareness":
-      return{
-         questions: [
-         {
-        question: "What is cultural competence?",
-        options: [
-          "Knowing how to cook international food",
-          "Understanding and respectfully responding to cultural differences",
-          "Speaking multiple languages",
-          "Memorizing all cultures' customs",
-        ],
-        correct: "Understanding and respectfully responding to cultural differences",
-      },
-      {
-        question: "What does it mean to view disability as a cultural identity?",
-        options: [
-          "Ignoring the disability",
-          "Recognizing that disability can be a meaningful part of someone’s identity and community",
-          "Treating everyone the same",
-          "Always speaking for the person",
-        ],
-        correct: "Recognizing that disability can be a meaningful part of someone’s identity and community",
-      },
-      {
-        question: "Which of the following is a respectful way to refer to someone?",
-        options: [
-          "Handicapped person",
-          "Autistic",
-          "Person with a disability",
-          "Crippled",
-        ],
-        correct: "Person with a disability",
-      },
-      {
-        question: "Why is cultural competence important in ODP services?",
-        options: [
-          "To meet quotas",
-          "To avoid personal conversations",
-          "To increase respectful, effective support",
-          "To make things more complicated",
-        ],
-        correct: "To increase respectful, effective support",
-      },
-      {
-        question: "True or False: Everyone has bias, but we can learn to recognize and challenge it.",
-        options: ["True", "False"],
-        correct: "True",
-      },
-      {
-        question: "How should you respond if you unintentionally offend someone culturally?",
-        options: [
-          "Defend yourself",
-          "Ignore it",
-          "Apologize, ask questions, and adjust your approach",
-          "Tell them it wasn’t your fault",
-        ],
-        correct: "Apologize, ask questions, and adjust your approach",
-      },
-      {
-        question: "What is one way to be inclusive of diverse cultural and disability identities?",
-        options: [
-          "Treat everyone identically",
-          "Ask before helping and respect preferences",
-          "Avoid learning about cultural holidays",
-          "Assume what works best for them",
-        ],
-        correct: "Ask before helping and respect preferences",
-      },
-      {
-        question: "What does person-first language mean?",
-        options: [
-          "Putting the diagnosis first in the sentence",
-          "Using nicknames",
-          "Referring to the individual before their disability",
-          "Talking slower",
-        ],
-        correct: "Referring to the individual before their disability",
-      },
-      {
-        question: "What should you do if someone doesn’t speak your language?",
-        options: [
-          "Ignore them",
-          "Shout louder",
-          "Find a way to communicate clearly using supports",
-          "Tell them to speak English",
-        ],
-        correct: "Find a way to communicate clearly using supports",
-      },
-      {
-        question: "Which of these is an example of inclusive practice?",
-        options: [
-          "Only celebrating mainstream holidays",
-          "Ignoring food preferences",
-          "Displaying diverse images and adapting routines to individual needs",
-          "Using one-size-fits-all approaches",
-        ],
-        correct: "Displaying diverse images and adapting routines to individual needs",
-      },
-      ],
-    }
-    case 'De-escalation and Behavioral Support Techniques':
-      return{
-        questions: [
- {
-        question: "Behavior is often a form of:",
-        options: ["Disrespect", "Communication", "Defiance", "Disobedience"],
-        correct: "Communication",
-      },
-      {
-        question: "What is the first stage of escalation?",
-        options: ["Trigger", "Peak", "Calm", "Recovery"],
-        correct: "Calm",
-      },
-      {
-        question: "Which strategy is proactive, not reactive?",
-        options: [
-          "Giving warnings",
-          "Offering choices",
-          "Arguing back",
-          "Physical intervention",
-        ],
-        correct: "Offering choices",
-      },
-      {
-        question: "What should your tone of voice be during de-escalation?",
-        options: ["Loud and firm", "Sarcastic", "Calm and soft", "Emotionless"],
-        correct: "Calm and soft",
-      },
-      {
-        question:
-          "True or False: All staff must use the same tone and volume when supporting everyone.",
-        options: ["True", "False"],
-        correct: "False",
-      },
-      {
-        question: "Which is a nonverbal de-escalation strategy?",
-        options: [
-          "Pointing fingers",
-          "Making intense eye contact",
-          "Open body posture",
-          "Pacing around",
-        ],
-        correct: "Open body posture",
-      },
-      {
-        question: "During the peak of behavior, what’s the priority?",
-        options: ["Arguing your point", "Punishment", "Ensuring safety", "Completing tasks"],
-        correct: "Ensuring safety",
-      },
-      {
-        question: "What is a helpful response during the agitation stage?",
-        options: [
-          "Ignore the person",
-          "Offer a power struggle",
-          "Redirect or give space",
-          "Physically intervene",
-        ],
-        correct: "Redirect or give space",
-      },
-      {
-        question: "Why is debriefing important after an incident?",
-        options: [
-          "To blame someone",
-          "To correct documentation",
-          "To promote recovery and learning",
-          "To avoid accountability",
-        ],
-        correct: "To promote recovery and learning",
-      },
-      {
-        question: "Which of the following supports a positive environment?",
-        options: [
-          "Inconsistency",
-          "Yelling to get attention",
-          "Rigid control",
-          "Compassion and structure",
-        ],
-        correct: "Compassion and structure",
-      },
-        ]
-      }
-      case 'CPR and First Aid':
-      return{
-        questions: [
-           {
-        question: "What does CPR stand for?",
-        options: [
-          "Cardiac Pressure Response",
-          "Cardiopulmonary Resuscitation",
-          "Central Pressure Regulation",
-          "Cardiac Pulmonary Reaction",
-        ],
-        correct: "Cardiopulmonary Resuscitation",
-      },
-      {
-        question: "When should you begin CPR on someone?",
-        options: [
-          "When they fall asleep",
-          "When they are unresponsive and not breathing normally",
-          "When they trip and fall",
-          "When they’re talking slowly",
-        ],
-        correct: "When they are unresponsive and not breathing normally",
-      },
-      {
-        question: "What is the correct ratio of compressions to breaths during adult CPR?",
-        options: ["10:1", "50:2", "30:2", "15:5"],
-        correct: "30:2",
-      },
-      {
-        question: "What’s the first thing to do if you find someone unconscious?",
-        options: [
-          "Walk away",
-          "Check responsiveness and call 911",
-          "Shake them hard",
-          "Start CPR immediately",
-        ],
-        correct: "Check responsiveness and call 911",
-      },
-      {
-        question: "True or False: An AED can be used by anyone who follows the voice prompts.",
-        options: ["True", "False"],
-        correct: "True",
-      },
-      {
-        question: "What is the purpose of first aid?",
-        options: [
-          "To replace professional medical care",
-          "To delay treatment",
-          "To give immediate care until medical help arrives",
-          "To avoid legal issues",
-        ],
-        correct: "To give immediate care until medical help arrives",
-      },
-      {
-        question: "How should you respond to a choking adult?",
-        options: [
-          "Offer them a drink",
-          "Slap their back while seated",
-          "Perform abdominal thrusts (Heimlich)",
-          "Wait until they turn blue",
-        ],
-        correct: "Perform abdominal thrusts (Heimlich)",
-      },
-      {
-        question: "What should a well-stocked first aid kit include?",
-        options: [
-          "Toys and snacks",
-          "Gloves, gauze, antiseptic wipes, CPR mask",
-          "Water balloons",
-          "TV remote",
-        ],
-        correct: "Gloves, gauze, antiseptic wipes, CPR mask",
-      },
-      {
-        question: "After providing first aid, what’s the next step?",
-        options: [
-          "Forget about it",
-          "Document the incident and notify your supervisor",
-          "Go home early",
-          "Hide any used supplies",
-        ],
-        correct: "Document the incident and notify your supervisor",
-      },
-      {
-        question: "Which situation is appropriate for CPR?",
-        options: [
-          "The person is conscious but dizzy",
-          "The person is breathing slowly",
-          "The person has no pulse and is not breathing",
-          "The person is having a seizure",
-        ],
-        correct: "The person has no pulse and is not breathing",
-      },
-        ]
-      }
+// export const HodgetQuizData = (option) => {
+// switch (option){
+//   case "Abuse, Neglect and Mandated Reporting" :
+//     return{
+//       questions: [
+//        {
+//         question: "What is considered physical abuse?",
+//         options: [
+//           "Ignoring someone’s question",
+//           "Making a joke about a person",
+//           "Hitting or pushing someone",
+//           "Forgetting to bring someone to an appointment",
+//         ],
+//         correct: "Hitting or pushing someone",
+//       },
+//       {
+//         question: "Which of the following is a sign of emotional abuse?",
+//         options: [
+//           "Dirty clothing",
+//           "Refusing to eat vegetables",
+//           "Fearfulness and withdrawal",
+//           "Falling asleep in public",
+//         ],
+//         correct: "Fearfulness and withdrawal",
+//       },
+//       {
+//         question: "Neglect can be defined as:",
+//         options: [
+//           "Choosing not to engage socially",
+//           "Failure to provide necessary care or supervision",
+//           "Taking someone’s money",
+//           "A preference for privacy",
+//         ],
+//         correct: "Failure to provide necessary care or supervision",
+//       },
+//       {
+//         question: "Mandated reporters must report suspected abuse:",
+//         options: [
+//           "Only if it’s confirmed",
+//           "At their next team meeting",
+//           "Immediately",
+//           "After discussing with family",
+//         ],
+//         correct: "Immediately",
+//       },
+//       {
+//         question: "True or False: Staff are required to report suspected abuse to their supervisor only.",
+//         options: ["True", "False"],
+//         correct: "False",
+//       },
+//       {
+//         question: "Which of the following could be sexual abuse?",
+//         options: [
+//           "Offering help with dressing",
+//           "Making jokes about someone’s appearance",
+//           "Inappropriate touching or coercion",
+//           "Explaining hygiene to someone",
+//         ],
+//         correct: "Inappropriate touching or coercion",
+//       },
+//       {
+//         question: "What is one correct way to report abuse?",
+//         options: [
+//           "Post about it online",
+//           "Call ChildLine or Protective Services",
+//           "Talk to a friend at lunch",
+//           "Wait until your shift ends",
+//         ],
+//         correct: "Call ChildLine or Protective Services",
+//       },
+//       {
+//         question: "Failure to report abuse may result in:",
+//         options: [
+//           "A promotion",
+//           "No consequences",
+//           "Legal action or job loss",
+//           "A verbal warning",
+//         ],
+//         correct: "Legal action or job loss",
+//       },
+//       {
+//         question: "A person shows bruises and seems withdrawn. You should:",
+//         options: [
+//           "Ignore it and give space",
+//           "Report it immediately",
+//           "Ask other staff what to do later",
+//           "Wait to see if it happens again",
+//         ],
+//         correct: "Report it immediately",
+//       },
+//       {
+//         question: "Creating a culture of safety means:",
+//         options: [
+//           "Staying silent about concerns",
+//           "Respecting every person and speaking up for their rights",
+//           "Only following instructions",
+//           "Avoiding extra responsibilities",
+//         ],
+//         correct: "Respecting every person and speaking up for their rights",
+//       },
+//     ]
+//     }
+//     case "Cultural Competency and Disability Awareness":
+//       return{
+//          questions: [
+//          {
+//         question: "What is cultural competence?",
+//         options: [
+//           "Knowing how to cook international food",
+//           "Understanding and respectfully responding to cultural differences",
+//           "Speaking multiple languages",
+//           "Memorizing all cultures' customs",
+//         ],
+//         correct: "Understanding and respectfully responding to cultural differences",
+//       },
+//       {
+//         question: "What does it mean to view disability as a cultural identity?",
+//         options: [
+//           "Ignoring the disability",
+//           "Recognizing that disability can be a meaningful part of someone’s identity and community",
+//           "Treating everyone the same",
+//           "Always speaking for the person",
+//         ],
+//         correct: "Recognizing that disability can be a meaningful part of someone’s identity and community",
+//       },
+//       {
+//         question: "Which of the following is a respectful way to refer to someone?",
+//         options: [
+//           "Handicapped person",
+//           "Autistic",
+//           "Person with a disability",
+//           "Crippled",
+//         ],
+//         correct: "Person with a disability",
+//       },
+//       {
+//         question: "Why is cultural competence important in ODP services?",
+//         options: [
+//           "To meet quotas",
+//           "To avoid personal conversations",
+//           "To increase respectful, effective support",
+//           "To make things more complicated",
+//         ],
+//         correct: "To increase respectful, effective support",
+//       },
+//       {
+//         question: "True or False: Everyone has bias, but we can learn to recognize and challenge it.",
+//         options: ["True", "False"],
+//         correct: "True",
+//       },
+//       {
+//         question: "How should you respond if you unintentionally offend someone culturally?",
+//         options: [
+//           "Defend yourself",
+//           "Ignore it",
+//           "Apologize, ask questions, and adjust your approach",
+//           "Tell them it wasn’t your fault",
+//         ],
+//         correct: "Apologize, ask questions, and adjust your approach",
+//       },
+//       {
+//         question: "What is one way to be inclusive of diverse cultural and disability identities?",
+//         options: [
+//           "Treat everyone identically",
+//           "Ask before helping and respect preferences",
+//           "Avoid learning about cultural holidays",
+//           "Assume what works best for them",
+//         ],
+//         correct: "Ask before helping and respect preferences",
+//       },
+//       {
+//         question: "What does person-first language mean?",
+//         options: [
+//           "Putting the diagnosis first in the sentence",
+//           "Using nicknames",
+//           "Referring to the individual before their disability",
+//           "Talking slower",
+//         ],
+//         correct: "Referring to the individual before their disability",
+//       },
+//       {
+//         question: "What should you do if someone doesn’t speak your language?",
+//         options: [
+//           "Ignore them",
+//           "Shout louder",
+//           "Find a way to communicate clearly using supports",
+//           "Tell them to speak English",
+//         ],
+//         correct: "Find a way to communicate clearly using supports",
+//       },
+//       {
+//         question: "Which of these is an example of inclusive practice?",
+//         options: [
+//           "Only celebrating mainstream holidays",
+//           "Ignoring food preferences",
+//           "Displaying diverse images and adapting routines to individual needs",
+//           "Using one-size-fits-all approaches",
+//         ],
+//         correct: "Displaying diverse images and adapting routines to individual needs",
+//       },
+//       ],
+//     }
+//     case 'De-escalation and Behavioral Support Techniques':
+//       return{
+//         questions: [
+//  {
+//         question: "Behavior is often a form of:",
+//         options: ["Disrespect", "Communication", "Defiance", "Disobedience"],
+//         correct: "Communication",
+//       },
+//       {
+//         question: "What is the first stage of escalation?",
+//         options: ["Trigger", "Peak", "Calm", "Recovery"],
+//         correct: "Calm",
+//       },
+//       {
+//         question: "Which strategy is proactive, not reactive?",
+//         options: [
+//           "Giving warnings",
+//           "Offering choices",
+//           "Arguing back",
+//           "Physical intervention",
+//         ],
+//         correct: "Offering choices",
+//       },
+//       {
+//         question: "What should your tone of voice be during de-escalation?",
+//         options: ["Loud and firm", "Sarcastic", "Calm and soft", "Emotionless"],
+//         correct: "Calm and soft",
+//       },
+//       {
+//         question:
+//           "True or False: All staff must use the same tone and volume when supporting everyone.",
+//         options: ["True", "False"],
+//         correct: "False",
+//       },
+//       {
+//         question: "Which is a nonverbal de-escalation strategy?",
+//         options: [
+//           "Pointing fingers",
+//           "Making intense eye contact",
+//           "Open body posture",
+//           "Pacing around",
+//         ],
+//         correct: "Open body posture",
+//       },
+//       {
+//         question: "During the peak of behavior, what’s the priority?",
+//         options: ["Arguing your point", "Punishment", "Ensuring safety", "Completing tasks"],
+//         correct: "Ensuring safety",
+//       },
+//       {
+//         question: "What is a helpful response during the agitation stage?",
+//         options: [
+//           "Ignore the person",
+//           "Offer a power struggle",
+//           "Redirect or give space",
+//           "Physically intervene",
+//         ],
+//         correct: "Redirect or give space",
+//       },
+//       {
+//         question: "Why is debriefing important after an incident?",
+//         options: [
+//           "To blame someone",
+//           "To correct documentation",
+//           "To promote recovery and learning",
+//           "To avoid accountability",
+//         ],
+//         correct: "To promote recovery and learning",
+//       },
+//       {
+//         question: "Which of the following supports a positive environment?",
+//         options: [
+//           "Inconsistency",
+//           "Yelling to get attention",
+//           "Rigid control",
+//           "Compassion and structure",
+//         ],
+//         correct: "Compassion and structure",
+//       },
+//         ]
+//       }
+//       case 'CPR and First Aid':
+//       return{
+//         questions: [
+//            {
+//         question: "What does CPR stand for?",
+//         options: [
+//           "Cardiac Pressure Response",
+//           "Cardiopulmonary Resuscitation",
+//           "Central Pressure Regulation",
+//           "Cardiac Pulmonary Reaction",
+//         ],
+//         correct: "Cardiopulmonary Resuscitation",
+//       },
+//       {
+//         question: "When should you begin CPR on someone?",
+//         options: [
+//           "When they fall asleep",
+//           "When they are unresponsive and not breathing normally",
+//           "When they trip and fall",
+//           "When they’re talking slowly",
+//         ],
+//         correct: "When they are unresponsive and not breathing normally",
+//       },
+//       {
+//         question: "What is the correct ratio of compressions to breaths during adult CPR?",
+//         options: ["10:1", "50:2", "30:2", "15:5"],
+//         correct: "30:2",
+//       },
+//       {
+//         question: "What’s the first thing to do if you find someone unconscious?",
+//         options: [
+//           "Walk away",
+//           "Check responsiveness and call 911",
+//           "Shake them hard",
+//           "Start CPR immediately",
+//         ],
+//         correct: "Check responsiveness and call 911",
+//       },
+//       {
+//         question: "True or False: An AED can be used by anyone who follows the voice prompts.",
+//         options: ["True", "False"],
+//         correct: "True",
+//       },
+//       {
+//         question: "What is the purpose of first aid?",
+//         options: [
+//           "To replace professional medical care",
+//           "To delay treatment",
+//           "To give immediate care until medical help arrives",
+//           "To avoid legal issues",
+//         ],
+//         correct: "To give immediate care until medical help arrives",
+//       },
+//       {
+//         question: "How should you respond to a choking adult?",
+//         options: [
+//           "Offer them a drink",
+//           "Slap their back while seated",
+//           "Perform abdominal thrusts (Heimlich)",
+//           "Wait until they turn blue",
+//         ],
+//         correct: "Perform abdominal thrusts (Heimlich)",
+//       },
+//       {
+//         question: "What should a well-stocked first aid kit include?",
+//         options: [
+//           "Toys and snacks",
+//           "Gloves, gauze, antiseptic wipes, CPR mask",
+//           "Water balloons",
+//           "TV remote",
+//         ],
+//         correct: "Gloves, gauze, antiseptic wipes, CPR mask",
+//       },
+//       {
+//         question: "After providing first aid, what’s the next step?",
+//         options: [
+//           "Forget about it",
+//           "Document the incident and notify your supervisor",
+//           "Go home early",
+//           "Hide any used supplies",
+//         ],
+//         correct: "Document the incident and notify your supervisor",
+//       },
+//       {
+//         question: "Which situation is appropriate for CPR?",
+//         options: [
+//           "The person is conscious but dizzy",
+//           "The person is breathing slowly",
+//           "The person has no pulse and is not breathing",
+//           "The person is having a seizure",
+//         ],
+//         correct: "The person has no pulse and is not breathing",
+//       },
+//         ]
+//       }
 
-  }
-}
+//   }
+// }
 
