@@ -190,7 +190,7 @@ function Training() {
                             <i className="fa-solid fa-clipboard-list text-info me-2"></i>
                             <h6 className="mb-0 text-info fw-bold">Activity/Scenario</h6>
                           </div>
-                          <div className="activity-content p-3 bg-white rounded border-start border-info border-3">
+                          <div className="activity-content p-3 bg-info-subtle fw-bold rounded border-start border-info border-3">
                             {currentTopic.activity || currentTopic.scenario || "No Activity"}
                           </div>
                         </div>
