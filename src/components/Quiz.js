@@ -147,7 +147,7 @@ function Quiz() {
             <div className="d-flex justify-content-between align-items-center mb-4">
               <h3 className="page-title">Quiz - {option}</h3>
               <button 
-                className="btn mx-3 btn-outline-secondary back-btn"
+                className="btn mx-3 btn-secondary back-btn"
                 onClick={handleBackToOptions}
               >
                 ← Back 

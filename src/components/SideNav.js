@@ -72,8 +72,8 @@ function Sidebar() {
       {/* Sidebar brand */}
       <div className="sidebar-brand">
         <Link to="/odp" className="brand-link d-flex flex-column align-items-center">
-        <img src={logo} height={50} width={50} alt="Everest Home Health Logo" className="sidebar-logo" />
-         Everest Home Health
+        <img src={logo} height={110} width={110} alt="Everest Home Health Logo" className="sidebar-logo" />
+        
         </Link>
       </div>
 

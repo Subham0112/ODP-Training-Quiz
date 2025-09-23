@@ -58,7 +58,7 @@ function Training() {
             <div className="training-header-section mb-4">
               <div className="d-flex justify-content-end mb-2">
                 <button 
-                  className="btn btn-outline-secondary back-btn-top" 
+                  className="btn btn-secondary back-btn-top" 
                   onClick={handleBackToOptions}
                 >
                   <i className="fa-solid fa-arrow-left me-2"></i>Back 
