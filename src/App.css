@@ -345,7 +345,8 @@
 .btn-custom {
   border: 1px solid #12a9e6;
   border-radius: 25px;
-  padding: 15px;
+  padding: 10px;
+  font-size: 14px;
   font-weight: 500;
   color: rgb(18, 88, 67);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);

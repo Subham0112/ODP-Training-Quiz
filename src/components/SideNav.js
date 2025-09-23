@@ -25,13 +25,13 @@ function Sidebar() {
   // Check if HOD section is active (HOD page + its training/quiz pages)
   const isHODActive = () => {
     return (
-      location.pathname === "/hod" ||
+      location.pathname === "/hab" ||
       // Check if we're in training/quiz for HOD (type = 'hod')
-      (location.pathname.includes("/training") && location.pathname.includes("/hod/")) ||
-      (location.pathname.includes("/quiz") && location.pathname.includes("/hod/")) ||
+      (location.pathname.includes("/training") && location.pathname.includes("/hab/")) ||
+      (location.pathname.includes("/quiz") && location.pathname.includes("/hab/")) ||
       // Alternative check using URL segments for /training/hod/* or /quiz/hod/*
-      location.pathname.startsWith("/training/hod") ||
-      location.pathname.startsWith("/quiz/hod")
+      location.pathname.startsWith("/training/hab") ||
+      location.pathname.startsWith("/quiz/hab")
     );
   };
 
@@ -96,7 +96,7 @@ function Sidebar() {
         {/* HOD Navigation Link */}
         <Link
           onClick={handleClick}
-          to="/hod"
+          to="/hab"
           className={`nav-link ${isHODActive() ? "active" : ""}`}
         >
           👨‍💼 HAB Training

@@ -22,7 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Navigate to="/odp" replace />} />
             <Route path="/odp" element={<ContentPage />} />
-             <Route path="/hod" element={<HodPage />} />
+             <Route path="/hab" element={<HodPage />} />
             <Route path="/training/:type/:option" element={<TrainingPage />} />
             <Route path="/quiz/:type/:option" element={<QuizPage />} />
             <Route path="*" element={<Navigate to="/odp" replace />} />
