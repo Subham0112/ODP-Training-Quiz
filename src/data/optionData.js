@@ -89,19 +89,19 @@ export const HodoptionsData =[
     description: 'Click to access training materials and quizzes for Recognition and Prevention of Exploitation'
   },
   {  
-    title: 'Incident Management (IM)',
+    title: 'Positive Approaches and Positive Behaviour Support',
     color: '#4ECDC4',
-    description: 'Click to access training materials and quizzes for Incident Management (IM)'
+    description: 'Click to access training materials and quizzes for Positive Approaches and Positive Behaviour Support'
   },
   {  
-    title: 'Incident Management (IM)',
+    title: 'Provider-Specific Policies and Procedures',
     color: '#4ECDC4',
-    description: 'Click to access training materials and quizzes for Incident Management (IM)'
+    description: 'Click to access training materials and quizzes for Provider-Specific Policies and Procedures'
   },
   {  
-    title: 'Incident Management (IM)',
+    title: 'ODP Regulations and ISP Process',
     color: '#4ECDC4',
-    description: 'Click to access training materials and quizzes for Incident Management (IM)'
+    description: 'Click to access training materials and quizzes for ODP Regulations &amp; ISP Process'
   },
 
 ]

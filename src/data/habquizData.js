@@ -1340,5 +1340,223 @@ export const HabgetQuizData = (option) => {
       }
     ]
             }
+            case "Positive Approaches and Positive Behaviour Support":
+              return{
+                  questions: [
+    {
+      question: "What is the primary focus of Positive Approaches?",
+      options: [
+        "Controlling behavior",
+        " Focusing on deficits",
+        "Supporting dignity and strengths",
+        "DTeaching punishments"
+      ],
+      correct: ""
+    },
+    {
+      question: "What does Positive Behavior Support aim to improve?",
+      options: [
+        "Documentation skills",
+        "Physical strength",
+        "Quality of life and behavior",
+        "Medication compliance"
+      ],
+      correct: ""
+    },
+    {
+      question: "What is the first step in creating a Behavior Support Plan?",
+      options: [
+        "Conducting a Functional Behavior Assessment",
+        "Writing rules",
+        "Hiring new staff",
+        "Creating a behavior chart"
+      ],
+      correct: ""
+    },
+    {
+      question: "Which of the following best describes behavior?",
+      options: [
+        "Random and meaningless",
+        "A form of communication",
+        "Always aggressive",
+        "Uncontrollable"
+      ],
+      correct: ""
+    },
+    {
+      question: "What should a good Behavior Support Plan include?",
+      options: [
+        "Punishments for bad behavior",
+        "List of restraints",
+        "Proactive strategies and teaching new skills",
+        "Medication increases"
+      ],
+      correct: ""
+    },
+    {
+      question: "Which is a proactive strategy in PBS?",
+      options: [
+        "Taking away privileges",
+        "Waiting for a behavior to occur",
+        "Providing choices and setting routines",
+        "Ignoring the person"
+      ],
+      correct: ""
+    },
+    {
+      question: "During a crisis, what should staff avoid?",
+      options: [
+        "Remaining calm",
+        "Power struggles",
+        "Soft tone",
+        "Validating feelings"
+      ],
+      correct: ""
+    },
+    {
+      question: "What is one benefit of using person-centered planning?",
+      options: [
+        "Less paperwork",
+        "More control over the person",
+        "Individualized and respectful support",
+        "Faster documentation"
+      ],
+      correct: ""
+    },
+    {
+      question: "In PBS, why is data collection important?",
+      options: [
+        "To punish the individual",
+        "To identify behavior triggers and patterns",
+        "To micromanage staff",
+        "To speed up services"
+      ],
+      correct: "To identify behavior triggers and patterns"
+    },
+    {
+      question: "Which of these is a person-centered strategy?",
+      options: [
+        "Referring to diagnosis first",
+        "Speaking for the person",
+        "Reframing behavior positively",
+        "Using labels"
+      ],
+      correct: ""
+    }
+  ]
+    }
+    case "Provider-Specific Policies and Procedures":
+      return {
+         questions: [
+    {
+      question: "What is the primary purpose of provider-specific policies?",
+      options: ["To increase paperwork", "To confuse staff", "To ensure safe, consistent, ethical service", "To limit independence"],
+      correct: "To ensure safe, consistent"
+    },
+    {
+      question: "Which behavior violates the Code of Conduct?",
+      options: ["Respecting others", "Professional boundaries", "Accepting cash from a family", "Following agency protocol"],
+      correct: "Accepting cash from a family"
+    },
+    {
+      question: "When should documentation be completed?",
+      options: ["Once a week", "After each shift", "Immediately after the service is delivered", "During team meetings"],
+      correct: "Immediately after the service is delivered"
+    },
+    {
+      question: "What does HIPAA protect?",
+      options: ["Staff privacy only", "Daily activity logs", "Personal and health information", "Timecards"],
+      correct: "Personal and health information"
+    },
+    {
+      question: "If you observe a potential hazard at a site, what should you do?",
+      options: ["Ignore it if no one’s around", "Clean it quietly", "Report and address it per safety protocol", "Wait for inspection"],
+      correct: "Report and address it per safety protocol"
+    },
+    {
+      question: "What is the correct response if you suspect abuse or neglect?",
+      options: ["Investigate personally", "Ask coworkers what they think", "Report immediately and complete an incident form", "Tell a friend"],
+      correct: " Report immediately and complete an incident form"
+    },
+    {
+      question: "What’s one key responsibility of all staff?",
+      options: ["Supervising other staff", "Following provider-specific policies and procedures", "Managing finances", " Writing new policies"],
+      correct: "Following provider-specific policies and procedures"
+    },
+    {
+      question: "What’s an example of unprofessional communication?",
+      options: ["Using agency email", "Texting with slang and emojis about work issues", "Attending meetings", "Updating your supervisor"],
+      correct: "Texting with slang and emojis about work issues"
+    },
+    {
+      question: "Where should you go to review agency procedures?",
+      options: ["Your calendar", "Online forums", "Policy manual or staff handbook", "Social media"],
+      correct: "Online forums"
+    },
+    {
+      question: "What’s the best way to stay compliant with your job duties?",
+      options: ["Ask coworkers to cover you", "Guess what’s expected", "Follow your training and written procedures", "Make up your own rules"],
+      answer: "Follow your training and written procedures"
+    }
+  ]
+
+      }
+      case "ODP Regulations and ISP Process":
+        return{
+          questions: [
+              {
+      question: "What does ISP stand for in the ODP system?",
+      options: ["Independent Support Program", "Individual Support Plan", "Inclusive Safety Policy", "Internal Service Plan"],
+      correct: "B"
+    },
+    {
+      question: "Which of the following documents the person’s goals, services, and support needs?",
+      options: ["The employee handbook", "A care memo", "The Individual Support Plan (ISP)", "A calendar"],
+      correct: "The Individual Support Plan (ISP)"
+    },
+    {
+      question: "Who is responsible for participating in the development of the ISP?",
+      options: ["Only the support coordinator", "Only family members", "The entire support team, including the individual", "Just the agency director"],
+      correct: "The entire support team, including the individual"
+    },
+    {
+      question: "Which Pennsylvania code outlines ODP service regulations?",
+      options: ["23 Pa. Code § 2500", "55 Pa. Code Chapters 6100 and 6400", "Title 18 Criminal Code", "34 CFR § 300"],
+      correct: "55 Pa. Code Chapters 6100 and 6400"
+    },
+    {
+      question: "True or False: Outcomes in the ISP must be person-centered and measurable.",
+      options: ["True", "False"],
+      correct: "True"
+    },
+    {
+      question: "When should the ISP be reviewed and updated?",
+      options: [" Only when the individual requests it", " Every 5 years", "At least annually and when needs change", "Never – it's a one-time plan"],
+      correct: "At least annually and when needs change"
+    },
+    {
+      question: "Which of the following is a support staff's responsibility related to the ISP?",
+      options: ["Ignore behavior changes", "Only attend ISP meetings if asked", "Report changes in needs and support daily routines", "Write the ISP alone"],
+      correct: "Report changes in needs and support daily routines"
+    },
+    {
+      question: "What kind of language should be used when documenting ISP progress?",
+      options: ["Opinionated", "Generalized", "Objective and factual", "Based on assumptions"],
+      correct: "Objective and factual"
+    },
+    {
+      question: "The ISP process helps ensure that services are:",
+      options: ["Easy for staff", "Focused on agency goals", " Meaningful and aligned with the person's preferences and outcomes", "Focused only on medical needs"],
+      correct: "Meaningful and aligned with the person's preferences and outcomes"
+    },
+    {
+      question: "What happens if staff fail to follow ISP and regulatory guidelines?",
+      options: ["The person still gets services as normal", "There are no consequences", "It may lead to rights violations, harm, or regulatory non-compliance", "The plan is automatically changed"],
+      correct: "It may lead to rights violations, harm, or regulatory non-compliance"
+    }
+          ]
+        }
+        default:
+          return {};
   }
 };

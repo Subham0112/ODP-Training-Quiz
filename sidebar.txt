@@ -1,0 +1,161 @@
+import React, { useEffect, useRef } from "react";
+import { Link, useLocation } from "react-router-dom";
+import logo from "./EHH_Final_logo.png";
+
+function Sidebar() {
+  const location = useLocation();
+  const sidebarRef = useRef(null);
+
+  const isActive = (path) => location.pathname === path;
+
+  // Check if ODP section is active (ODP page + its training/quiz pages)
+  const isODPActive = () => {
+    return (
+      location.pathname === "/odp" ||
+      // Check if we're in training/quiz for ODP (type = 'odp')
+      (location.pathname.includes("/training") && location.pathname.includes("/odp/")) ||
+      (location.pathname.includes("/quiz") && location.pathname.includes("/odp/")) ||
+      // Alternative check using URL segments for /training/odp/* or /quiz/odp/*
+      location.pathname.startsWith("/training/odp") ||
+      location.pathname.startsWith("/quiz/odp")
+    );
+  };
+
+  // Check if HOD section is active (HOD page + its training/quiz pages)
+  const isHODActive = () => {
+    return (
+      location.pathname === "/hod" ||
+      // Check if we're in training/quiz for HOD (type = 'hod')
+      (location.pathname.includes("/training") && location.pathname.includes("/hod/")) ||
+      (location.pathname.includes("/quiz") && location.pathname.includes("/hod/")) ||
+      // Alternative check using URL segments for /training/hod/* or /quiz/hod/*
+      location.pathname.startsWith("/training/hod") ||
+      location.pathname.startsWith("/quiz/hod")
+    );
+  };
+
+  const handleClick = () => {
+    document.getElementById("mySidebar").classList.remove("visibleNav");
+  };
+
+  // Click outside functionality
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const sidebar = sidebarRef.current;
+      const menuBtn = document.querySelector(".menu-btn");
+
+      if (sidebar && sidebar.classList.contains("visibleNav")) {
+        if (
+          !sidebar.contains(event.target) &&
+          !menuBtn?.contains(event.target)
+        ) {
+          sidebar.classList.remove("visibleNav");
+        }
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <div className="sidebar-enhanced" id="mySidebar" ref={sidebarRef}>
+      {/* Close button (X) */}
+      <button onClick={handleClick} className="sidebar-close-btn">
+        <i className="fa-solid fa-xmark"></i>
+      </button>
+
+      {/* Sidebar brand */}
+      <div className="sidebar-brand-enhanced">
+        <Link to="/odp" className="brand-link-enhanced">
+          <div className="logo-container">
+            <img 
+              src={logo} 
+              height={45} 
+              width={45} 
+              alt="Everest Home Health Logo" 
+              className="sidebar-logo-enhanced" 
+            />
+          </div>
+          <div className="brand-text">
+            <h5 className="brand-title">Everest Home</h5>
+            <span className="brand-subtitle">Health</span>
+          </div>
+        </Link>
+      </div>
+
+      {/* Navigation links */}
+      <nav className="nav-enhanced">
+        {/* Navigation section header */}
+        <div className="nav-section-header-enhanced">
+          <div className="section-divider"></div>
+          <h6 className="nav-header-enhanced">
+            <i className="fa-solid fa-graduation-cap me-2"></i>
+            Learning Center
+          </h6>
+          <div className="section-divider"></div>
+        </div>
+
+        <div className="nav-links-container">
+          {/* ODP Navigation Link */}
+          <Link
+            onClick={handleClick}
+            to="/odp"
+            className={`nav-link-enhanced ${isODPActive() ? "active" : ""}`}
+          >
+            <div className="nav-icon">
+              <i className="fa-solid fa-clipboard-list"></i>
+            </div>
+            <div className="nav-content">
+              <span className="nav-title">ODP Training</span>
+              <small className="nav-description">Orientation & Development Program</small>
+            </div>
+            <div className="nav-arrow">
+              <i className="fa-solid fa-chevron-right"></i>
+            </div>
+          </Link>
+
+          {/* HOD Navigation Link */}
+          <Link
+            onClick={handleClick}
+            to="/hod"
+            className={`nav-link-enhanced ${isHODActive() ? "active" : ""}`}
+          >
+            <div className="nav-icon">
+              <i className="fa-solid fa-user-tie"></i>
+            </div>
+            <div className="nav-content">
+              <span className="nav-title">HAB Training</span>
+              <small className="nav-description">Health & Behavioral Training</small>
+            </div>
+            <div className="nav-arrow">
+              <i className="fa-solid fa-chevron-right"></i>
+            </div>
+          </Link>
+        </div>
+      </nav>
+
+      {/* Footer section */}
+      <div className="sidebar-footer">
+        <div className="footer-divider"></div>
+        <div className="footer-content">
+          <i className="fa-solid fa-heart text-danger me-2"></i>
+          <small className="footer-text">Caring for Community</small>
+        </div>
+      </div>
+
+      {/* Mobile close button */}
+      <button
+        onClick={handleClick}
+        className="mobile-close-btn"
+      >
+        <i className="fa-solid fa-arrow-left"></i>
+      </button>
+    </div>
+  );
+}
+
+export default Sidebar;

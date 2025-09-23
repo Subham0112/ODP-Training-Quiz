@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "./EHH_Final_logo.png";
 // import '../styles/Sidebar.css';
 
 function Sidebar() {
@@ -70,8 +71,9 @@ function Sidebar() {
 
       {/* Sidebar brand */}
       <div className="sidebar-brand">
-        <Link to="/odp" className="brand-link">
-          Training System
+        <Link to="/odp" className="brand-link d-flex flex-column align-items-center">
+        <img src={logo} height={50} width={50} alt="Everest Home Health Logo" className="sidebar-logo" />
+         Everest Home Health
         </Link>
       </div>
 
@@ -97,7 +99,7 @@ function Sidebar() {
           to="/hod"
           className={`nav-link ${isHODActive() ? "active" : ""}`}
         >
-          👨‍💼 HOD Training
+          👨‍💼 HAB Training
         </Link>
       </nav>
 

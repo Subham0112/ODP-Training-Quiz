@@ -1131,7 +1131,663 @@ duration: "45-60 minutes",
     }
   ]
             }
-      
+    case "Mission and Values" :
+      return{
+  description: "Welcome to ODP Mission & Values",
+  objective: [
+    "Build deeper understanding of ODP’s mission and core values through activities, real-life scenarios, and discussion."
+  ],
+  icebreaker: "Engage. Reflect. Apply.",
+  duration: "45-60 minutes",
+
+        topics: [
+        {
+  title: "ODP Overview",
+  description: [
+    "ODP = Office of Developmental Programs",
+    "Supports individuals with intellectual and developmental disabilities (IDD) across Pennsylvania.",
+    "Focuses on community-based supports and independence."
+  ],
+  activity: ""
+},
+{
+  title: "ODP Mission Statement",
+  description: [
+    "\"To support Pennsylvanians with developmental disabilities to achieve greater independence, choice, and opportunity in their lives.\""
+  ],
+  activity: "Discuss in groups: What does each part of this mission mean to you?"
+},
+{
+  title: "Breaking It Down",
+  description: [
+    "Independence: Empower decision-making",
+    "Choice: Tailor services to individual needs",
+    "Opportunity: Encourage access to employment, housing, and relationships"
+  ],
+  activity: ""
+},
+{
+  title: "ODP Core Values",
+  description: [
+    "Everyday Lives",
+    "Choice & Control",
+    "Inclusion",
+    "Dignity & Respect",
+    "Health & Safety",
+    "Relationships",
+    "Communication",
+    "Partnership",
+    "Accountability"
+  ],
+  activity: ""
+},
+{
+  title: "Everyday Lives – Real World Meaning",
+  description: [
+    "All people want:",
+    "A home",
+    "Friends & relationships",
+    "A purpose",
+    "Community involvement"
+  ],
+  activity: "Create a 'Vision Board' using magazine cutouts or sketches that represent a good life."
+},
+{
+  title: "Choice and Control",
+  description: [
+    "Support people to:",
+    "Choose their clothes",
+    "Plan their meals",
+    "Set daily routines",
+    "Pick their goals"
+  ],
+  activity: "Role Play: One staffer wants to change the individual’s lunch time. Discuss how to handle this respectfully."
+},
+{
+  title: "Dignity and Respect",
+  description: [
+    "You promote dignity by:",
+    "Knocking before entering",
+    "Using people’s chosen names",
+    "Listening actively",
+    "Never assuming incompetence"
+  ],
+  activity: ""
+},
+{
+  title: "Inclusion",
+  description: [
+    "Help individuals:",
+    "Use public transport",
+    "Join community classes",
+    "Attend cultural events"
+  ],
+  activity: "Group Chat: What barriers have you seen to inclusion? How can we remove them?"
+},
+{
+  title: "Health and Safety",
+  description: [
+    "Support safe living by:",
+    "Following care plans",
+    "Reporting incidents immediately",
+    "Practicing fire and emergency drills"
+  ],
+  activity: "Interactive Activity Below"
+},
+{
+  title: "Relationships Matter",
+  description: [
+    "Foster real connections:",
+    "Support visits with family",
+    "Assist in phone or video calls",
+    "Encourage friendship and love"
+  ],
+  activity: "Scenario Discussion: A client wants to date someone. How do you support them?"
+},
+{
+  title: "Communication = Power",
+  description: [
+    "Learn every individual’s language:",
+    "- Gestures",
+    "- Eye movement",
+    "- Communication devices"
+  ],
+  activity: "Practice: Pair up and use non-verbal tools to communicate a message."
+},
+{
+  title: "Partnership and Accountability",
+  description: [
+    "Work together with:",
+    "Families",
+    "Professionals",
+    "Community organizations",
+    "Keep records accurate",
+    "Follow through on responsibilities",
+    "Own your mistakes"
+  ],
+  activity: ""
+},
+{
+  title: "Reflection & Self-Check",
+  description: [
+    "Ask Yourself:",
+    "Am I treating others with dignity?",
+    "Do I foster independence?",
+    "Am I respecting individual communication?"
+  ],
+  activity: "Journaling Time: Write 1 way you'll apply today's training."
+}
+
+        ]
+      }
+      case "Person-Centered Practices":
+        return {
+  description: "Welcome to Person-Centered Practices - An ODP Training Experience",
+  objective: [
+    "Define Person-Centered Practices",
+    "Understand values that support these practices",
+    "Learn tools and methods to implement them",
+    "Engage in real-world scenarios"
+  ],
+  icebreaker: "Reflect on a time when you felt truly listened to.",
+  duration: "45-60 minutes",
+
+  topics: [
+    {
+      title: "What Are Person-Centered Practices?",
+      description: [
+        "An approach that focuses on:",
+        "The individual’s strengths",
+        "What’s important TO and FOR them",
+        "Promoting voice, choice, and control"
+      ],
+      activity: "Group discussion: What does person-centered mean to you?"
+    },
+    {
+      title: "Important TO vs. Important FOR",
+      description: [
+        "Important TO = Preferences, relationships, routines",
+        "Important FOR = Health, safety, responsibilities",
+        "Balance is key"
+      ],
+      activity: "Scenario: A person wants to eat only sweets. How do you support both 'to' and 'for'?"
+    },
+    {
+      title: "Person-Centered Thinking Tools",
+      description: [
+        "One-page profiles",
+        "Communication charts",
+        "Learning logs",
+        "Decision-making profiles"
+      ],
+      activity: "Practice: Fill out a one-page profile for a peer or yourself."
+    },
+    {
+      title: "Creating a Meaningful Day",
+      description: [
+        "Support routines that matter to the person",
+        "Explore hobbies, passions, and social connections",
+        "Avoid generic schedules"
+      ],
+      activity: "Map out a 'perfect day' with input from a mock individual."
+    },
+    {
+      title: "Positive Presupposition",
+      description: [
+        "Believe the best about each person:",
+        "Assume competence",
+        "Assume the person has a meaningful past, present, and future"
+      ],
+      activity: "Reflection: How can assumptions harm or help outcomes?"
+    },
+    {
+      title: "Listening to Understand",
+      description: [
+        "Active Listening Techniques:",
+        "Open body language",
+        "Clarifying questions",
+        "Paraphrasing",
+        "Validating emotions"
+      ],
+      activity: "Pair practice: One shares a story, the other practices active listening."
+    },
+    {
+      title: "Planning WITH Not FOR",
+      description: [
+        "Involve the person in planning:",
+        "Use their words and goals",
+        "Make decisions together",
+        "Revise based on feedback"
+      ],
+      activity: "Scenario: Rewrite a support plan sentence to reflect shared language."
+    },
+    {
+      title: "Cultural Sensitivity & Person-Centeredness",
+      description: [
+        "Respect:",
+        "Culture",
+        "Religion",
+        "Language",
+        "Lived experience"
+      ],
+      activity: "Group share: What cultural values could impact support preferences?"
+    },
+    {
+      title: "Person-Centered Support in Action",
+      description: [
+        "Look for:",
+        "Flexibility",
+        "Empowerment",
+        "Creativity",
+        "Respect"
+      ],
+      activity: "Case Study: How would you support 'Tina,' a 22-year-old who wants to start her own small business?"
+    },
+    {
+      title: "Wrap Up & Commitments",
+      description: [
+        "What will YOU do differently?",
+        "Apply at least one new person-centered tool",
+        "Stay curious",
+        "Listen more",
+        "Ask first"
+      ],
+      activity: "Write a commitment statement to implement within 7 days."
+    },
+    {
+      title: "Closing",
+      description: [
+        "Thank you for your dedication to person-centered care!",
+        "Contact your supervisor with any questions."
+      ],
+      activity: "Complete the quiz and turn in your commitment statement."
+    }
+  ]
+}
+case "Recognition and Prevention of Exploitation":
+  return{
+  description: "Welcome to Recognition & Prevention of Exploitation Training",
+  objective: [
+    "Learn to identify, respond to, and prevent exploitation of vulnerable individuals."
+  ],
+  icebreaker: "Define 'exploitation' in your own words and share.",
+  duration: "45-60 minutes",
+
+  topics: [
+    {
+      title: "What is Exploitation?",
+      description: [
+        "Taking advantage of a person for personal gain.",
+        "Includes financial, emotional, sexual, and labor exploitation."
+      ],
+      activity: "Group brainstorm – What are real-life examples of exploitation?"
+    },
+    {
+      title: "Who is at Risk?",
+      description: [
+        "Individuals with intellectual and developmental disabilities (IDD).",
+        "Those with limited communication or social support."
+      ],
+      scenario: "A support recipient gives a staff member a gift – appropriate or not?"
+    },
+    {
+      title: "Signs of Exploitation",
+      description: [
+        "Unexplained money withdrawals or missing items.",
+        "Fearful behavior, anxiety, secrecy."
+      ],
+      activity: "Match warning signs with types of exploitation."
+    },
+    {
+      title: "Recognizing Financial Exploitation",
+      description: [
+        "Using someone's funds or property without permission.",
+        "Manipulating someone into giving gifts or money."
+      ],
+      scenario: "Review a sample spending log – is anything concerning?"
+    },
+    {
+      title: "Emotional & Psychological Exploitation",
+      description: [
+        "Includes manipulation, threats, isolation.",
+        "Often harder to detect but equally harmful."
+      ],
+      activity: "Role Play: Responding to subtle emotional manipulation."
+    },
+    {
+      title: "Reporting & Documentation",
+      description: [
+        "It is your DUTY to report suspected exploitation.",
+        "Complete an incident report and notify your supervisor immediately."
+      ],
+      activity: "Practice writing a brief incident report based on a scenario."
+    },
+    {
+      title: "Preventing Exploitation",
+      description: [
+        "Build trust and empower individuals.",
+        "Promote independence and informed choices."
+      ],
+      activity: "Design a daily routine that reduces risk of exploitation."
+    },
+    {
+      title: "Your Role as a Mandated Reporter",
+      description: [
+        "All ODP staff are mandated reporters.",
+        "Failing to report is a violation of law and policy."
+      ],
+      scenario: "When is something worth reporting?"
+    },
+    {
+      title: "Training Wrap-Up & Review",
+      description: [
+        "Recognize, Respond, Report, and Prevent exploitation."
+      ],
+      activity: "Create an anti-exploitation checklist for your worksite.",
+      conclusion:"Q&A and resource review"
+    },
+  ]
+}
+case "Positive Approaches and Positive Behaviour Support":
+  return{
+  description: "Welcome to Positive Approaches & Positive Behavior Support",
+  objective: [
+    "Understand how to promote meaningful lives through respectful, individualized support."
+  ],
+  icebreaker: "Share one positive behavior support experience you've had.",
+  duration: "45-60 minutes",
+
+  topics: [
+    {
+      title: "What is Positive Approaches?",
+      description: [
+        "Philosophy focusing on strengths and person-centered planning.",
+        "Emphasizes dignity, respect, and empowerment."
+      ],
+      activity: "Define 'positive approach' in your own words and share."
+    },
+    {
+      title: "What is Positive Behavior Support (PBS)?",
+      description: [
+        "Evidence-based approach to understanding and addressing challenging behaviors.",
+        "Focus: Prevention, skill-building, improving quality of life."
+      ],
+      scenario: "A person is yelling frequently—how might PBS approach this?"
+    },
+    {
+      title: "Core Values of Positive Approaches",
+      description: [
+        "Respect and Dignity",
+        "Person-Centered Planning",
+        "Strength-Based Support"
+      ],
+      activity: "Group Brainstorm: What do these values look like in daily support?"
+    },
+    {
+      title: "Understanding Behavior as Communication",
+      description: [
+        "All behavior has meaning and purpose.",
+        "Ask: What is the person trying to communicate?"
+      ],
+      activity: "Behavior interpretation role-play"
+    },
+    {
+      title: "Functional Behavior Assessment (FBA)",
+      description: [
+        "Identifies triggers, patterns, and functions of behavior.",
+        "Collect data, observe, and involve the team."
+      ],
+      activity: "Case Study: Conduct a mini-FBA in small groups."
+    },
+    {
+      title: "Developing Behavior Support Plans (BSP)",
+      description: [
+        "Plan includes proactive strategies, teaching new skills, and crisis responses.",
+        "Focus on teaching and prevention, not punishment."
+      ],
+      activity: "Review a sample BSP and suggest improvements."
+    },
+    {
+      title: "Proactive Strategies in PBS",
+      description: [
+        "Set routines, clear expectations, provide choices.",
+        "Modify environment to reduce triggers."
+      ],
+      activity: "Design a calming environment plan."
+    },
+    {
+      title: "Crisis Prevention and De-escalation",
+      description: [
+        "Remain calm, use soft tone, validate feelings.",
+        "Avoid power struggles and reactive behavior."
+      ],
+      scenario: "You witness escalation—what do you do?"
+    },
+    {
+      title: "Wrap-Up & Reflection",
+      description: [
+        "What was your biggest takeaway?"
+      ],
+      activity: "Create a mini positive support plan for a fictional person.",
+      conclusion:"Q&A and resource sharing"
+    },
+
+  ]
+}
+case "Provider-Specific Policies and Procedures":
+  return{
+  description: "Welcome to Provider-Specific Policies & Procedures Training",
+  objective: [
+    "Learn how to follow our agency’s policies to ensure safe, ethical, and effective support."
+  ],
+  icebreaker: "What’s one policy you think every organization should have?",
+  duration: "45-60 minutes",
+
+  topics: [
+    {
+      title: "The Purpose of Policies & Procedures",
+      description: [
+        "Provide clear expectations and accountability.",
+        "Protect the rights of individuals and staff."
+      ],
+      activity: "Small group discussion—What can go wrong without policies?"
+    },
+    {
+      title: "Code of Conduct & Ethical Behavior",
+      description: [
+        "Act professionally, honestly, and respectfully at all times.",
+        "Avoid conflicts of interest, favoritism, or inappropriate relationships."
+      ],
+      scenario: "A staff member accepts cash from a family—what now?"
+    },
+    {
+      title: "Service Delivery Guidelines",
+      description: [
+        "Follow the ISP and individual-specific instructions.",
+        "Engage in person-centered interactions."
+      ],
+      activity: "Review a sample ISP and match it with proper staff action."
+    },
+    {
+      title: "Documentation Requirements",
+      description: [
+        "Write timely, accurate, objective progress notes.",
+        "Record services immediately after delivery."
+      ],
+      activity: "Fix the errors in a poorly written documentation sample."
+    },
+    {
+      title: "Confidentiality & HIPAA Responsibilities",
+      description: [
+        "Never share personal or health info without consent.",
+        "Speak quietly and avoid using names in public areas."
+      ],
+      scenario: "A staff talks about an individual at a local store—what’s wrong?"
+    },
+    {
+      title: "Health & Safety Protocols",
+      description: [
+        "Follow hygiene, PPE, and emergency plans.",
+        "Maintain clean, hazard-free environments."
+      ],
+      activity: "Identify safety issues in a simulated environment image."
+    },
+    {
+      title: "Incident Reporting Procedures",
+      description: [
+        "Report suspected abuse, neglect, or injuries immediately.",
+        "Complete all required reports and notify your supervisor."
+      ],
+      scenario: "You see a bruise that wasn’t there yesterday—what do you do?"
+    },
+    {
+      title: "Staff Conduct: Attendance & Communication",
+      description: [
+        "Show up on time, call out properly, and follow scheduling policies.",
+        "Use professional language in all communication formats."
+      ],
+      activity: "Identify the professionalism errors in mock texts."
+    },
+    {
+      title: "Training Wrap-Up & Final Thoughts",
+      description: [
+        "Policies and procedures keep everyone safe and accountable."
+      ],
+      activity: "Create a personal pledge of one policy you will prioritize.",
+      conclusion:"Questions, feedback, and policy manual access"
+    },
+    {
+      title: "Closing",
+      description: [
+        "Questions, feedback, and policy manual access"
+      ],
+      activity: ""
+    }
+  ]
+}
+
+  case "ODP Regulations and ISP Process":
+    return{
+description: "Welcome to ODP Regulations & ISP Process Training. Learn how ODP regulations and the ISP process work together to support individuals receiving services.",
+
+objective: [
+  "Understand key ODP regulations.",
+  "Explore the ISP process step-by-step.",
+  "Identify your role in ISP development.",
+  "Practice applying regulations and ISP content."
+],
+
+icebreaker: "Reflect: Why is it important to follow regulations when supporting someone?",
+duration: "45-60 minutes",
+
+topics: [
+  {
+    title: "What Are ODP Regulations?",
+    description: [
+      "ODP regulations are rules and standards set by the Office of Developmental Programs to protect individuals and ensure quality support."
+    ],
+    activity: "Group brainstorm: What rules or policies do you follow daily in your role?"
+  },
+  {
+    title: "Where Do Regulations Come From?",
+    description: [
+      "Federal Medicaid laws.",
+      "PA Department of Human Services.",
+      "55 Pa. Code Chapters 6100, 6400, 6500, 2380, 2390.",
+      "Provider agreements and licensing requirements."
+    ],
+    activity: "Look up a section of 55 Pa. Code and summarize its purpose with your team."
+  },
+  {
+    title: "Key Regulatory Focus Areas",
+    description: [
+      "Individual rights.",
+      "Health and safety.",
+      "Documentation.",
+      "Staffing qualifications and training.",
+      "Incident reporting.",
+      "Service delivery standards."
+    ],
+    activity: "Match regulatory categories to real-life examples of service delivery."
+  },
+  {
+    title: "What Is an ISP?",
+    description: [
+      "The Individual Support Plan (ISP) is a document that outlines a person’s needs, preferences, goals, and services to support them."
+    ],
+    activity: "Write a sentence you would include in someone’s ISP based on what’s important TO them."
+  },
+  {
+    title: "Who Develops the ISP?",
+    description: [
+      "The ISP is developed by a team including the individual, family/guardians, supports coordinator, providers, and direct support professionals."
+    ],
+    activity: "Role-play an ISP team meeting and share input from the direct support professional's perspective."
+  },
+  {
+    title: "Steps in the ISP Process",
+    description: [
+      "Gather info about the person.",
+      "Review assessments and preferences.",
+      "Create outcomes and goals.",
+      "Define services and supports.",
+      "Review and revise regularly."
+    ],
+    activity: "In pairs: Design a mock outcome for someone who wants a job."
+  },
+  {
+    title: "Writing Outcomes and Goals",
+    description: [
+      "Outcomes must be person-centered, measurable, time-bound, linked to services, and progress-monitored."
+    ],
+    activity: "Rewrite a vague goal to make it specific and measurable."
+  },
+  {
+    title: "Your Role in the ISP Process",
+    description: [
+      "Provide info about preferences and routines.",
+      "Report changes in behavior/needs.",
+      "Support goal achievement.",
+      "Attend ISP meetings."
+    ],
+    activity: "List 3 ways you contribute to someone’s ISP success."
+  },
+  {
+    title: "Monitoring and Updating the ISP",
+    description: [
+      "The ISP is a living document.",
+      "Updated at least annually.",
+      "Modified when needs change.",
+      "Progress documented regularly."
+    ],
+    scenario: "A person no longer enjoys their community outing. What do you do?"
+  },
+  {
+    title: "Regulations and Accountability",
+    description: [
+      "Follow ISP and regulatory requirements.",
+      "Protect rights.",
+      "Provide accurate documentation.",
+      "Communicate concerns."
+    ],
+    scenario: "Case study: A support plan is not being followed. What’s your obligation?"
+  },
+  {
+    title: "Putting It All Together",
+    description: [
+      "The ISP and regulations guide how we support individuals to live meaningful, safe, and empowered lives."
+    ],
+    activity: "Design a one-page infographic summarizing your responsibilities under the ISP and regulations."
+  },
+  {
+    title: "Conclusion",
+    description: [
+      "Your understanding of regulations and the ISP ensures quality, dignity, and safety in the lives of those you serve."
+    ],
+    activity: "Complete your quiz and share your ISP takeaways."
+  }
+]
+    }
   default:
   return {};
 
