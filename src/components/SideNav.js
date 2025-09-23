@@ -65,7 +65,7 @@ function Sidebar() {
   return (
     <div className="sidebar" id="mySidebar" ref={sidebarRef}>
       {/* Close button (X) */}
-      <button onClick={handleClick} className="cancel-btn mt-3">
+      <button onClick={handleClick} className="cancel-btn  mb-4 ">
         <i className="fa-solid fa-xmark"></i>
       </button>
 
