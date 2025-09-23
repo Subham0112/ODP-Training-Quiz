@@ -13,7 +13,7 @@ function Content() {
     <div className="content-page mx-4">
       <div className="container-fluid d-flex flex-column justify-content-center align-items-center py-4">
         <div className="row justify-content-center">
-          <div className="col-12">
+          <div className="w-100 text-center">
             <p className="text-center text-muted mb-5">
               Select an option below to start your training or take a quiz
             </p>

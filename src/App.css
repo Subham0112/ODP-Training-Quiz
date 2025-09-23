@@ -3,14 +3,15 @@
 /* Sidebar Main Container */
 .sidebar {
   background: linear-gradient(180deg, #1e3c72 0%, #2a5298 50%, #1e3c72 100%);
-  min-height: 100vh;
+  min-height: 99vh;
   border-radius: 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 220px;
+  border-bottom-left-radius: 10px;
   padding: 0;
-  margin: 0;
+  margin-left: 5px;
   z-index: 1000;
   box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
@@ -149,7 +150,7 @@
 .cancel-btn {
   position: absolute;
   top: 15px;
-  right: 15px;
+ 
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -182,8 +183,8 @@
 
 .closebtn-2 {
   position: absolute;
-  right: -20px;
-  top: 45%;
+  right: 0px;
+  top: 65%;
   transform: translateY(-50%);
   height: 45px;
   width: 45px;
@@ -416,8 +417,7 @@
   .row > .col-lg-6,
   .row > .col-xl-6,
   .row > [class*="col-"] {
-    flex: 0 0 48% !important;
-    max-width: 48% !important;
+
     margin-right: 2%;
     margin-bottom: 15px;
   }
@@ -441,8 +441,8 @@
 
 @media (max-width: 768px) {
   .sidebar {
-    transform: translateX(-100%);
-    width: 280px;
+    transform: translateX(-105%);
+    width: 260px;
     border-radius: 0 15px 15px 0;
     z-index: 1050;
   }
@@ -525,9 +525,7 @@
   .row > .col-lg-6,
   .row > .col-xl-6,
   .row > [class*="col-"] {
-    flex: 0 0 48% !important;
-    max-width: 48% !important;
-    margin-right: 2%;
+ 
     margin-bottom: 20px;
   }
   
